@@ -1,0 +1,98 @@
+{
+	"metaData": {
+		"name": "Sisteme Distribuite"
+	},
+	"monday": {
+		"14": [
+		{
+			"name": "Deontologie Academica",
+			"teacher": "Marasoiu A. / ?",
+			"type": "course",
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
+			"location": "0(Haret)"
+		}
+		]
+	},
+	"tuesday": {
+		"16": [
+		{
+			"name": "Programare Paralela si Concurenta",
+			"teacher": "Paduraru C.",
+			"type": "course",
+			"onceEveryTwoWeeks": false,
+			"isOdd": false,
+			"location": "L.302(A)"
+		}
+		],
+		"18": [
+		{
+			"name": "Programare Paralela si Concurenta (Gr. 1)",
+			"teacher": "Paduraru C.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
+			"location": "L.302(A)"
+		},
+		{
+			"name": "Programare Paralela si Concurenta (Gr. 2)",
+			"teacher": "Paduraru C.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "L.302(A)"
+		}
+		]
+	},
+	"wednesday": {
+		"16": [
+			{
+				"name": "Programare Algoritmi Eficienti",
+				"teacher": "Popa A.",
+				"type": "course",
+				"onceEveryTwoWeeks": false,
+				"isOdd": false,
+				"location": "2(Pompeiu)"
+			}
+			],
+			"18": [
+			{
+				"name": "Programare Algoritmi Eficienti (Gr. 1)",
+				"teacher": "Popa A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": true,
+				"location": "5"
+			},
+			{
+				"name": "Programare Algoritmi Eficienti (Gr. 2)",
+				"teacher": "Popa A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": false,
+				"location": "5"
+			}
+			]
+	},
+	"thursday": {
+		"16": [
+			{
+				"name": "Programare Algoritmi Eficienti (Gr. 3)",
+				"teacher": "Popa A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": true,
+				"location": "202"
+			},
+			{
+				"name": "Programare Algoritmi Eficienti (Gr. 4)",
+				"teacher": "Popa A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": false,
+				"location": "202"
+			}
+		]
+	},
+	"friday": {}
+}

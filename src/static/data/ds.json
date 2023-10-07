@@ -1,0 +1,161 @@
+{
+	"metaData": {
+		"name": "Data Science"
+	},
+	"monday": {
+		"14": [
+		{
+			"name": "Deontologie Academica",
+			"teacher": "Marasoiu A. / ?",
+			"type": "course",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "0(Haret)"
+		}
+		],
+		"16": [
+			{
+				"name": "Programare Probabilistica",
+				"teacher": "Popescu M.",
+				"type": "course",
+				"onceEveryTwoWeeks": false,
+				"isOdd": false,
+				"location": "L-119"
+			}
+			]
+	},
+	"tuesday": {
+		"18": [
+		{
+			"name": "Exploratory Data Analysis",
+			"teacher": "Ichim B.",
+			"type": "course",
+			"onceEveryTwoWeeks": false,
+			"isOdd": false,
+			"location": "202"
+		}
+		]
+	},
+	"wednesday": {
+		"16": [
+			{
+				"name": "Exploratory Data Analysis (Gr. 3)",
+				"teacher": "Ichim B.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": true,
+				"location": "L.302(A)"
+			},
+			{
+				"name": "Exploratory Data Analysis (Gr. 4)",
+				"teacher": "Ichim B.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": false,
+				"location": "L.302(A)"
+			}
+			],
+			"18": [
+				{
+					"name": "Exploratory Data Analysis (Gr. 1)",
+					"teacher": "Ichim B.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": true,
+					"location": "L-308"
+				},
+				{
+					"name": "Exploratory Data Analysis (Gr. 2)",
+					"teacher": "Ichim B.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": false,
+					"location": "L-308"
+				},
+				{
+					"name": "Practical Machine Learning (Gr. 3)",
+					"teacher": "Poesina E.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": true,
+					"location": "L-305"
+				},
+				{
+					"name": "Exploratory Data Analysis (Gr. 4)",
+					"teacher": "Hondru V.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": false,
+					"location": "L-119"
+				}
+			]
+	},
+	"thursday": {
+		"16": [
+			{
+				"name": "Programare Probabilistica",
+				"teacher": "Popescu M.",
+				"type": "course",
+				"onceEveryTwoWeeks": false,
+				"isOdd": false,
+				"location": "3(Titeica)"
+			}
+		],
+		"18": [
+			{
+				"name": "Practical Machine Learning",
+				"teacher": "Ionescu R.",
+				"type": "course",
+				"onceEveryTwoWeeks": false,
+				"isOdd": false,
+				"location": "3(Titeica)"
+			}
+		]
+	},
+	"friday": {
+		"16": [
+			{
+				"name": "Practical Machine Learning (Gr. 1)",
+				"teacher": "Croitoru A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": true,
+				"location": "L-322"
+			},
+			{
+				"name": "Practical Machine Learning (Gr. 2)",
+				"teacher": "Croitoru A.",
+				"type": "laboratory",
+				"onceEveryTwoWeeks": true,
+				"isOdd": false,
+				"location": "L-322"
+			}
+			],
+			"18": [
+				{
+					"name": "Programare Probabilistica (Gr. 3)",
+					"teacher": "Popescu M.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": true,
+					"location": "L-322"
+				},
+				{
+					"name": "Practical Machine Learning (Gr. 5)",
+					"teacher": "Hondru V.",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": true,
+					"isOdd": false,
+					"location": "L-308"
+				},
+				{
+					"name": "Programare Probabilistica (Gr. 4)",
+					"teacher": "?",
+					"type": "laboratory",
+					"onceEveryTwoWeeks": false,
+					"isOdd": false,
+					"location": "L-322"
+				}
+			]
+	}
+}
