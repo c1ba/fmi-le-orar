@@ -1,0 +1,92 @@
+{
+	"monday": {
+		"14": [
+		{
+			"name": "Deontologie Academica",
+			"teacher": "Marasoiu A. / ?",
+			"type": "course",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "0(Haret)"
+		}
+		]
+	},
+	"tuesday": {
+		"16": [
+		{
+			"name": "Logical Multilanguage Systems",
+			"teacher": "Leustean L.",
+			"type": "course",
+			"onceEveryTwoWeeks": false,
+			"location": "Sala Google (214)"
+		}
+		],
+		"18": [
+		{
+			"name": "OS: Design & Security",
+			"teacher": "Irofti P.",
+			"type": "course",
+			"onceEveryTwoWeeks": false,
+			"location": "220"
+		}
+		]
+	},
+	"wednesday": {},
+	"thursday": {
+		"8": [
+		{
+			"name": "Criptologie Avansata",
+			"teacher": "Prunescu M.",
+			"type": "course",
+			"onceEveryTwoWeeks": false,
+			"location": "1"
+		}
+		],
+		"10": [
+		{
+			"name": "Logical Multilanguage Systems (Gr. 1)",
+			"teacher": "Cheval H.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
+			"location": "L-119"
+		},
+		{
+			"name": "Logical Multilanguage Systems (Gr. 2)",
+			"teacher": "Cheval H.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "L-119"
+		}
+		]
+	},
+	"friday": {
+		"8": [
+		{
+			"name": "OS: Design & Security (Gr. 1)",
+			"teacher": "Nicolae A.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
+			"location": "L-303"
+		},
+		{
+			"name": "OS: Design & Security (Gr. 2)",
+			"teacher": "Nicolae A.",
+			"type": "laboratory",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "L-303"
+		}],
+		"16": [
+		{
+			"name": "Criptologie Avansata (Gr. 1)",
+			"teacher": "Dumitru N.",
+			"type": "seminary",
+			"onceEveryTwoWeeks": true,
+			"isOdd": false,
+			"location": "L-303"
+		}]
+	}
+}
