@@ -21,7 +21,7 @@
             resultObject[`${hour}`] = [];
           }
           for (const subject of subjects) {
-            resultObject[`${hour}`].push({name: subject.name, day: day, isOdd: subject.isOdd, onceEveryTwoWeeks: subject.onceEveryTwoWeeks});
+            resultObject[`${hour}`].push({name: subject.name, day: day, isOdd: subject.isOdd, onceEveryTwoWeeks: subject.onceEveryTwoWeeks, type: subject.type});
           }
         }
       }
@@ -49,9 +49,13 @@
       {#each days as day}
         {#if days.indexOf(day) > 0 && days.indexOf(day) < 6}
           {@const daySubjects = subjects.filter((sub) => sub.day === day &&
-          (!sub.onceEveryTwoWeeks || (sub.onceEveryTwoWeeks && Boolean($nowDate.getDate() / 7 % 2) === sub.isOdd))
+          (!sub.onceEveryTwoWeeks || (sub.onceEveryTwoWeeks && !Boolean($nowDate.getDate() / 7 % 2) === sub.isOdd))
           ).map((sub) => sub.name).join("\n")}
-          <td>{daySubjects}</td>
+          {#if daySubjects != ""}
+          <td style="background-color: #1e273d80; border: solid 1px #293F5D; white-space: pre-line;">{daySubjects}</td>
+          {:else}
+          <td style="border: solid 1px #293F5D">{daySubjects}</td>
+          {/if}
         {/if}
       {/each}
     </tr>
