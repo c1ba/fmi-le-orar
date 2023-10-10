@@ -8,15 +8,15 @@
 			"name": "Management & Organizare Programe Soft (Gr. 1)",
 			"teacher": "Ipate F.",
 			"type": "laboratory",
-			"onceEveryTwoWeeks": false,
-			"isOdd": false,
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
 			"location": "L-201"
 		},
 		{
 			"name": "Management & Organizare Programe Soft (Gr. 2)",
 			"teacher": "Ipate F.",
 			"type": "laboratory",
-			"onceEveryTwoWeeks": false,
+			"onceEveryTwoWeeks": true,
 			"isOdd": false,
 			"location": "L-201"
 		}
@@ -26,8 +26,8 @@
 			"name": "Management & Organizare Programe Soft (Gr. 3)",
 			"teacher": "Ipate F.",
 			"type": "laboratory",
-			"onceEveryTwoWeeks": false,
-			"isOdd": false,
+			"onceEveryTwoWeeks": true,
+			"isOdd": true,
 			"location": "L-201"
 		}
 		],

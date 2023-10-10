@@ -12,6 +12,7 @@
   import RenderTable from './lib/components/Table/RenderTable.svelte';
   import CurrentDomainData from './lib/components/CurrentCourse/CurrentDomainData.svelte';
   import CurrentOptionalData from './lib/components/CurrentCourse/CurrentOptionalData.svelte';
+    import RenderCompactTable from './lib/components/Table/RenderCompactTable.svelte';
 
   let domain: string = "IS";
   let optional: string = "";
@@ -66,6 +67,9 @@
   </div>
 
   <RenderTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
+
+  <h2 style="margin-left: 25px;">This week:</h2>
+  <RenderCompactTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
   
 </main>
 

@@ -15,16 +15,6 @@
 		]
 	},
 	"tuesday": {
-		"16": [
-		{
-			"name": "Logical Multilanguage Systems",
-			"teacher": "Leustean L.",
-			"type": "course",
-			"onceEveryTwoWeeks": false,
-			"isOdd": false,
-			"location": "Sala Google (214)"
-		}
-		],
 		"18": [
 		{
 			"name": "OS: Design & Security",
@@ -36,7 +26,18 @@
 		}
 		]
 	},
-	"wednesday": {},
+	"wednesday": {
+		"16": [
+			{
+				"name": "Logical Multilanguage Systems",
+				"teacher": "Leustean L.",
+				"type": "course",
+				"onceEveryTwoWeeks": false,
+				"isOdd": false,
+				"location": "Sala Google (214)"
+			}
+			]
+	},
 	"thursday": {
 		"8": [
 		{
