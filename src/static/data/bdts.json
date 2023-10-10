@@ -65,7 +65,7 @@
 		{
 			"name": "Tehnici de Programare Web in Java",
 			"teacher": "Industrie",
-			"type": "course",
+			"type": "laboratory",
 			"onceEveryTwoWeeks": false,
 			"isOdd": false,
 			"location": "L-303"
