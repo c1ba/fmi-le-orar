@@ -1,10 +1,8 @@
 <script lang="ts">
     import {days} from '../../../constants/dateAndTime';
-    import RenderRow from './RenderRow.svelte';
-    import { courseIsInTheFuture } from '../../../utils/CourseUtils';
     import {nowDate} from '../../../lib/stores/utilsStore';
     import { capitalizeString } from '../../../utils/StringUtils';
-    import { onMount } from 'svelte';
+    import RenderCompactCell from './RenderCompactCell.svelte';
     
   
     export let JSONOBjectData: {[key: string]: {[key: string]: any}};
@@ -50,11 +48,12 @@
         {#if days.indexOf(day) > 0 && days.indexOf(day) < 6}
           {@const daySubjects = subjects.filter((sub) => sub.day === day &&
           (!sub.onceEveryTwoWeeks || (sub.onceEveryTwoWeeks && !Boolean($nowDate.getDate() / 7 % 2) === sub.isOdd))
-          ).map((sub) => sub.name).join("\n")}
-          {#if daySubjects != ""}
-          <td style="background-color: #1e273d80; border: solid 1px #293F5D; white-space: pre-line;">{daySubjects}</td>
+          )}
+          {@const daySubjectsNames = daySubjects.map((sub) => sub.name).join("\n")}
+          {#if daySubjectsNames != ""}
+          <RenderCompactCell subjectsData={daySubjects} />
           {:else}
-          <td style="border: solid 1px #293F5D">{daySubjects}</td>
+          <td>{daySubjectsNames}</td>
           {/if}
         {/if}
       {/each}
