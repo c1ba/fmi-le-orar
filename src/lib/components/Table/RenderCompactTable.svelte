@@ -2,10 +2,12 @@
     import {days} from '../../../constants/dateAndTime';
     import {nowDate} from '../../../lib/stores/utilsStore';
     import { capitalizeString } from '../../../utils/StringUtils';
+    import {coursesStore} from '../../stores/optionalsStore';
     import RenderCompactCell from './RenderCompactCell.svelte';
     
   
     export let JSONOBjectData: {[key: string]: {[key: string]: any}};
+    $:optionalKey = localStorage.getItem("selectedOptional");
 
     const getCompactCourses = (JSONData: {[key: string]: {[key: string]: any}}) => {
       const resultObject: {[key: string]: {[key: string]: any}[]} = {};
@@ -23,6 +25,16 @@
           }
         }
       }
+      $coursesStore.forEach((sub: {[key: string]: any}) => {
+        if (sub.name.includes(optionalKey)) {
+          console.log(sub);
+          if (!resultObject[`${sub.beginningHour}`]) {
+            resultObject[`${sub.beginningHour}`] = [];
+          }
+          resultObject[`${sub.beginningHour}`].push({name: sub.name, day: sub.day, isOdd: sub.isOdd, onceEveryTwoWeeks: sub.onceEveryTwoWeeks, type: sub.type});
+        }
+
+      })
       }
       return resultObject;
     };
