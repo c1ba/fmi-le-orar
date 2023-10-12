@@ -65,11 +65,15 @@
 
     <CurrentOptionalData />
   </div>
-
-  <RenderTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
+  
+  <div style="width: 100vw; overflow: auto;">
+    <RenderTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
+  </div>
 
   <h2 style="margin-left: 25px;">This week:</h2>
-  <RenderCompactTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
+  <div style="width: 100vw; overflow: auto;">
+    <RenderCompactTable JSONOBjectData={JSONData[domain.toLowerCase()]} />
+  </div>
   
 </main>
 
