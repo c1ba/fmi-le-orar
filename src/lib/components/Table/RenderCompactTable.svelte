@@ -1,6 +1,7 @@
 <script lang="ts">
     import {days} from '../../../constants/dateAndTime';
     import {nowDate} from '../../../lib/stores/utilsStore';
+    import { checkIfDuplicates } from '../../../utils/CourseUtils';
     import { capitalizeString } from '../../../utils/StringUtils';
     import {coursesStore} from '../../stores/optionalsStore';
     import RenderCompactCell from './RenderCompactCell.svelte';
@@ -10,7 +11,13 @@
     $:optionalKey = localStorage.getItem("selectedOptional");
 
     const getCompactCourses = (JSONData: {[key: string]: {[key: string]: any}}) => {
+      const pushIfNotDuplicate = (coursesArray: {[key: string]: string | number | boolean}[], 
+      course: {[key: string]: string | number | boolean},
+      dayVal: string) => checkIfDuplicates(coursesArray, course) &&
+      coursesArray.push({name: course.name, day: dayVal, isOdd: course.isOdd, onceEveryTwoWeeks: course.onceEveryTwoWeeks, type: course.type});
+
       const resultObject: {[key: string]: {[key: string]: any}[]} = {};
+
       if (JSONData && JSONData != null) {
         for (const [day, val] of Object.entries(JSONData)) {
         if (!days.includes(day)) {
@@ -21,17 +28,17 @@
             resultObject[`${hour}`] = [];
           }
           for (const subject of subjects) {
-            resultObject[`${hour}`].push({name: subject.name, day: day, isOdd: subject.isOdd, onceEveryTwoWeeks: subject.onceEveryTwoWeeks, type: subject.type});
+            checkIfDuplicates(resultObject[`${hour}`], subject) &&
+            pushIfNotDuplicate(resultObject[`${hour}`], subject, day);
           }
         }
       }
       $coursesStore.forEach((sub: {[key: string]: any}) => {
         if (sub.name.includes(optionalKey)) {
-          console.log(sub);
           if (!resultObject[`${sub.beginningHour}`]) {
             resultObject[`${sub.beginningHour}`] = [];
           }
-          resultObject[`${sub.beginningHour}`].push({name: sub.name, day: sub.day, isOdd: sub.isOdd, onceEveryTwoWeeks: sub.onceEveryTwoWeeks, type: sub.type});
+          pushIfNotDuplicate(resultObject[`${sub.beginningHour}`], sub, sub.day);
         }
 
       })
