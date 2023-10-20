@@ -3,6 +3,7 @@
     import {nowDate} from '../../../lib/stores/utilsStore';
     import { checkIfDuplicates } from '../../../utils/CourseUtils';
     import { capitalizeString } from '../../../utils/StringUtils';
+    import { getWeekOfMonth } from '../../../utils/TimeUtils';
     import {coursesStore} from '../../stores/optionalsStore';
     import RenderCompactCell from './RenderCompactCell.svelte';
     
@@ -66,7 +67,7 @@
       {#each days as day}
         {#if days.indexOf(day) > 0 && days.indexOf(day) < 6}
           {@const daySubjects = subjects.filter((sub) => sub.day === day &&
-          (!sub.onceEveryTwoWeeks || (sub.onceEveryTwoWeeks && !Boolean($nowDate.getDate() / 7 % 2) === sub.isOdd))
+          (!sub.onceEveryTwoWeeks || (sub.onceEveryTwoWeeks && Boolean(getWeekOfMonth($nowDate) % 2) === sub.isOdd))
           )}
           {@const daySubjectsNames = daySubjects.map((sub) => sub.name).join("\n")}
           {#if daySubjectsNames != ""}
