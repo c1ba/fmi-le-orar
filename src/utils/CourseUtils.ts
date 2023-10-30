@@ -8,7 +8,7 @@ export const verifyIfCourseIsNow = (subject: any, nowDate: Date , beginningHour:
 export const courseIsInTheFuture = (subject: any, nowDate: Date, beginningHour: number, timeDuration: number) => {
     return (!subject.onceEveryTwoWeeks || 
         (subject.onceEveryTwoWeeks && 
-            (Boolean(getWeekOfMonth(nowDate) % 2) === !subject.isOdd))) && 
+            (Boolean(getWeekOfMonth(nowDate) % 2) === subject.isOdd))) && 
             ((beginningHour + timeDuration) > nowDate.getHours());
 }
 
