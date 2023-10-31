@@ -15,7 +15,7 @@
       const pushIfNotDuplicate = (coursesArray: {[key: string]: string | number | boolean}[], 
       course: {[key: string]: string | number | boolean},
       dayVal: string) => checkIfDuplicates(coursesArray, course) &&
-      coursesArray.push({name: course.name, day: dayVal, isOdd: course.isOdd, onceEveryTwoWeeks: course.onceEveryTwoWeeks, type: course.type});
+      coursesArray.push({name: course.name, day: dayVal, isOdd: course.isOdd, onceEveryTwoWeeks: course.onceEveryTwoWeeks, type: course.type, location: course.location});
 
       const resultObject: {[key: string]: {[key: string]: any}[]} = {};
 

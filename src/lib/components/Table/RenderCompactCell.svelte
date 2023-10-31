@@ -26,5 +26,5 @@
 
 
 <td style="background-image: {returnGradient(colors)}; white-space: pre-line; border: solid 1px #484C6C; box-shadow: inset 0 0 50px #484B5F99;">
-{subjectsData.map((sub) => sub.name).join("\n")}
+{subjectsData.map((sub) => `${sub.name} \n [Room ${sub.location}]`).join("\n\n")}
 </td>
